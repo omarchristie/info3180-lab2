@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="tocenter">
+    <div class="topprofile">
+        <div>
+            <img src = "{{ url_for('static', filename = 'IMG_20180110_232339.jpg')}}" />
+        </div>
+        <div>
+            <p>Onattael Christopher</p>
+            <p>@OC</p>
+            <p>Jamaica, Jamaica</p>
+            <p>Join: {{date}}</p>
+        </div>
+    </div>
+    <div>
+        <p>
+            I am a programmer, Programming is what I do dude.
+            does not stop for anything and will go the extra mile.
+            What else do you expect from me? I am greatness!
+        </p>
+    </div>
+    <div class="infocon">
+        <ul class="nav nav-pills" role="tablist">
+              <li class="nav-item followers col-lg-4 col-4 p-0 follow detail">
+                  <p class="m-0"><strong>987</strong><br>Post</p>
+              </li>
+              <li class="nav-item following col-lg-4 col-4 p-0">
+                  <p class="m-0"><strong>1</strong><br>Following</p>
+              </li>
+              <li class="nav-item works col-lg-4 col-4 p-0">
+                  <p class="m-0"><strong>2599999</strong><br>Follower</p>
+              </li>
+            </ul>
+    </div>
+    <div>
+        <button type="button" class="buttonprofile">Follow</button>
+    </div>
+</div>
+
+{% endblock %}
